@@ -1,0 +1,76 @@
+   0.335177800s  INFO prepare_target{force=false package_id=Luno-Task v0.1.0 (\\wsl.localhost\Ubuntu\home\tharun\code\rust\tutorial) target="Luno-Task"}: cargo::core::compiler::fingerprint: dependency on `anstyle_wincon` is newer than we are 13413598030.362182200s > 13413597699.430149700s "C:\\Users\\Tharun\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\anstream-0.6.21"
+   0.513936800s  INFO prepare_target{force=false package_id=Luno-Task v0.1.0 (\\wsl.localhost\Ubuntu\home\tharun\code\rust\tutorial) target="Luno-Task"}: cargo::core::compiler::fingerprint: fingerprint error for Luno-Task v0.1.0 (\\wsl.localhost\Ubuntu\home\tharun\code\rust\tutorial)/Check { test: false }/TargetInner { name: "Luno-Task", doc: true, ..: with_path("\\\\wsl.localhost\\Ubuntu\\home\\tharun\\code\\rust\\tutorial\\src\\main.rs", Edition2024) }
+   0.513994300s  INFO prepare_target{force=false package_id=Luno-Task v0.1.0 (\\wsl.localhost\Ubuntu\home\tharun\code\rust\tutorial) target="Luno-Task"}: cargo::core::compiler::fingerprint:     err: failed to read `\\wsl.localhost\Ubuntu\home\tharun\code\rust\tutorial\target\debug\.fingerprint\Luno-Task-c8eb011a8716a95a\bin-Luno-Task`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   0.553034300s  INFO prepare_target{force=false package_id=clap v4.5.54 target="clap"}: cargo::core::compiler::fingerprint: fingerprint dirty for clap v4.5.54/Check { test: false }/TargetInner { benched: false, ..: lib_target("clap", ["lib"], "C:\\Users\\Tharun\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\clap-4.5.54\\src\\lib.rs", Edition2021) }
+   0.553089600s  INFO prepare_target{force=false package_id=clap v4.5.54 target="clap"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleDepFingerprint { name: "clap_builder" })
+   0.574216100s  INFO prepare_target{force=false package_id=clap_builder v4.5.54 target="clap_builder"}: cargo::core::compiler::fingerprint: fingerprint dirty for clap_builder v4.5.54/Check { test: false }/TargetInner { benched: false, ..: lib_target("clap_builder", ["lib"], "C:\\Users\\Tharun\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\clap_builder-4.5.54\\src\\lib.rs", Edition2021) }
+   0.574267100s  INFO prepare_target{force=false package_id=clap_builder v4.5.54 target="clap_builder"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleDepFingerprint { name: "anstream" })
+   0.596333400s  INFO prepare_target{force=false package_id=anstream v0.6.21 target="anstream"}: cargo::core::compiler::fingerprint: fingerprint dirty for anstream v0.6.21/Check { test: false }/TargetInner { ..: lib_target("anstream", ["lib"], "C:\\Users\\Tharun\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\anstream-0.6.21\\src\\lib.rs", Edition2021) }
+   0.596374700s  INFO prepare_target{force=false package_id=anstream v0.6.21 target="anstream"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleDependency { name: "anstyle_wincon", dep_mtime: FileTime { seconds: 13413598030, nanos: 362182200 }, max_mtime: FileTime { seconds: 13413597699, nanos: 430149700 } })
+   0.636545400s  INFO prepare_target{force=false package_id=anstyle-query v1.1.5 target="anstyle_query"}: cargo::core::compiler::fingerprint: fingerprint dirty for anstyle-query v1.1.5/Check { test: false }/TargetInner { ..: lib_target("anstyle_query", ["lib"], "C:\\Users\\Tharun\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\anstyle-query-1.1.5\\src\\lib.rs", Edition2021) }
+   0.636606500s  INFO prepare_target{force=false package_id=anstyle-query v1.1.5 target="anstyle_query"}: cargo::core::compiler::fingerprint:     dirty: NothingObvious
+   0.671435700s  INFO prepare_target{force=false package_id=anstyle-wincon v3.0.11 target="anstyle_wincon"}: cargo::core::compiler::fingerprint: fingerprint dirty for anstyle-wincon v3.0.11/Check { test: false }/TargetInner { ..: lib_target("anstyle_wincon", ["lib"], "C:\\Users\\Tharun\\.cargo\\registry\\src\\index.crates.io-1949cf8c6b5b557f\\anstyle-wincon-3.0.11\\src\\lib.rs", Edition2021) }
+   0.671483800s  INFO prepare_target{force=false package_id=anstyle-wincon v3.0.11 target="anstyle_wincon"}: cargo::core::compiler::fingerprint:     dirty: NothingObvious
+   1.076342000s  INFO prepare_target{force=false package_id=Luno-Task v0.1.0 (\\wsl.localhost\Ubuntu\home\tharun\code\rust\tutorial) target="Luno-Task"}: cargo::core::compiler::fingerprint: fingerprint error for Luno-Task v0.1.0 (\\wsl.localhost\Ubuntu\home\tharun\code\rust\tutorial)/Check { test: true }/TargetInner { name: "Luno-Task", doc: true, ..: with_path("\\\\wsl.localhost\\Ubuntu\\home\\tharun\\code\\rust\\tutorial\\src\\main.rs", Edition2024) }
+   1.076385300s  INFO prepare_target{force=false package_id=Luno-Task v0.1.0 (\\wsl.localhost\Ubuntu\home\tharun\code\rust\tutorial) target="Luno-Task"}: cargo::core::compiler::fingerprint:     err: failed to read `\\wsl.localhost\Ubuntu\home\tharun\code\rust\tutorial\target\debug\.fingerprint\Luno-Task-cc43953bbf5badfd\test-bin-Luno-Task`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+    Checking anstyle-query v1.1.5
+    Checking anstyle-wincon v3.0.11
+    Checking anstream v0.6.21
+    Checking clap_builder v4.5.54
+    Checking clap v4.5.54
+    Checking Luno-Task v0.1.0 (\\wsl.localhost\Ubuntu\home\tharun\code\rust\tutorial)
+error: could not compile `Luno-Task` (bin "Luno-Task" test) due to 1 previous error
+warning: build failed, waiting for other jobs to finish...
+error: could not compile `Luno-Task` (bin "Luno-Task") due to 1 previous error
